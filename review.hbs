@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Lora:ital@1&family=Nanum+Myeongjo&family=Reem+Kufi:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <title>Document</title>
+</head>
+<body>
+{{>header}}
+ 
+<form action="/sendReview" method="POST">
+    <h2 class="yeet">Select a tea to write a review for:</h2>
+        <div class="box">
+            <select name="tea">
+                <div class="content">                 
+                        {{#each content1}}
+                            <option value="{{this.id}}">{{this.tea}}</option>
+                        {{/each}}
+                </div>
+            </select>
+        </div>
+            <br><br><br><br><br><br>
+<h2>Hello {{myUsername}} ! please enter your review below:</h2>
+{{log myUsername}}
+    <br>
+    <input type="text" name="review">
+    <input class="navBar" type="submit">
+</form>
+<br>
+
+<h1>the reviews sent in:</h1>
+<div class="content">
+
+    {{#each content}}
+        <p>User: {{this.myUsername}} <br> Tea: {{this.tea}} <br> {{this.review}}</p>
+        <a class="navBar" href="/review?deleteItem={{this.id}}">delete</a>
+        <a class="navBar" href="/review/editForm?id={{this.id}}">Edit</a>
+    {{/each}}
+</div>
+
+
+</body>
+</html>

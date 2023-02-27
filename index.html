@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Lora:ital@1&family=Nanum+Myeongjo&family=Reem+Kufi:wght@400;700&display=swap" rel="stylesheet">
+    <title>{{title}}</title>
+</head>
+<body>
+    {{>header}}
+
+
+
+<div class="two-columns">
+  {{#each teas}}
+    <div>
+      <img src="/img/{{this.image}}">
+      <div class="desc">
+        <p class="desc">{{this.tea}} <br> {{this.description}}<br> {{this.price}}</p>
+        <a class="navBar" href="/addToOrder?id={{this.id}}">add to order</a>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+
+
+</body>
+</html>

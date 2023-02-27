@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Lora:ital@1&family=Nanum+Myeongjo&family=Reem+Kufi:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Lora', serif;
+}
+
+
+body {
+    overflow-x: hidden;
+    overflow-y:inherit;
+    background-color: #4A7C59;
+}
+
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.logo {
+  font-size: 32px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: teal;
+  color: #fff;
+}
+.menu{
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover{
+background: color #f9ada0;
+border-radius: 5px;
+transition: 0.3s ease;
+}
+
+.menu li{
+  padding: 5px 14px;
+}
+
+
+
+
+
+.navBar {
+    width:10%;
+    font-size: 15px;
+    font-family: 'Lora', serif;
+    padding: 10px;
+    background-color: #FCCCC5;
+    box-shadow: 0 5px 0 #F9ADA0;
+    border:none;
+    border-radius: 10px;
+}
+.navBar:active {
+  box-shadow: none;
+ transform: translateY(5px);
+}
+
+.navBar2 {
+    width:fit-content;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    padding: 10px;
+    background-color: #FCCCC5;
+    box-shadow: 0 5px 0 #F9ADA0;
+    border:none;
+    border-radius: 10px;
+
+}
+.navBar2:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+
+
+input[type=text] {
+    margin: auto;
+    width: fit-content;
+    font-size: 20px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid #F9ADA0;
+    outline: none;
+  }
+input[type=text]:focus {
+  width: fit-content;
+    background-color: #FCCCC5;
+}
+
+
+input[type=password] {
+  width: fit-content;
+    font-size: 20px;
+    padding: 10px 10px;
+    margin: auto;
+    box-sizing: border-box;
+    border: 1px solid #F9ADA0;
+    outline: none;
+  }
+  
+  input[type=password]:focus {
+    width: fit-content;
+    background-color: #FCCCC5;
+  }
+
+
+
+
+a{
+    font-family: 'Nanum Myeongjo', serif;
+    text-decoration: none;
+    color: #312F2F;
+    margin-left: 25px;
+    padding: 7px;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+}
+
+.fixIt{
+  margin: auto;
+  justify-content: center;
+  display: grid;    
+  gap: 0.1rem;
+}
+
+.loginPage{
+    margin: auto;
+    justify-content: center;
+    font-size: 30px;
+    color:#FCCCC5;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    font-weight: normal;
+    text-shadow: 0 0 6px rgba(0, 0, 0, .4);
+    
+}
+
+h1 {
+    font-size: 48px;
+    color:#FCCCC5;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    font-weight: normal;
+    text-shadow: 0 0 6px rgba(0, 0, 0, .4);
+}
+h2,label { 
+    margin-top: 100px;
+    font-size: 20px;
+    color:#FCCCC5;
+    padding: 20px;
+    font-weight: normal;
+    text-shadow: 0 0 6px rgba(0, 0, 0, .4);
+}
+
+
+h1 span {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+p{
+    padding:10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+
+img {
+    width: 50%;
+    height: auto;
+    background: #FCCCC5;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.img2 {
+    width: 20%;
+    height: auto;
+    background: #FCCCC5;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.desc{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+.desc2{
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+
+.container {
+    column-count: 4;
+    column-gap: 20px;
+    max-width: 10000px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .25);
+}
+
+
+
+.two-columns {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+button{
+    float: left;
+}
+
+/* The container must be positioned relative: */
+
+.box {
+    float: left;
+    position: absolute;
+
+  }
+  
+  .box select {
+    background-color: #F9ADA0;
+    color: white;
+    padding: 12px;
+    width: 250px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    appearance: button;
+    appearance: button;
+    outline: none;
+  }
+
+
+  textarea {
+    font-family: 'Lora', serif;
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #F9ADA0;
+    border-radius: 4px;
+    background-color: #FCCCC5;
+    font-size: 16px;
+    resize: none;
+  }
+
+
+
+
+
+
+input[type=checkbox]{
+  display: none;
+} 
+  
+  /*HAMBURGER MENU*/
+.hamburger {
+  display: none; 
+  font-size: 24px;  
+  user-select: none;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .navBar{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+
+  .menu {
+    margin: auto;
+    border-radius: 10px;
+    width: 80%;
+    display:none;
+    position: absolute;
+    background-color:#f9ada03b;
+    height: 300px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px;
+  }
+
+  input[type=checkbox]{
+    display: none;
+  }
+    /*HAMBURGER MENU*/
+    
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    user-select: none;
+  }
+  
+  
+  .menu li + li {
+    margin-top: 30px;
+  }
+
+  input[type=checkbox]:checked ~ .menu{
+    display: block;
+  }
+
+  .hamburger {
+    float: right;
+    width: fit-content;
+    display: block;
+    cursor: pointer;
+  }
+
+  .yeet{
+    margin-top: 400px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .two-columns {
+    margin-top: 500px;
+    grid-template-columns: 1fr;
+  }
+}
